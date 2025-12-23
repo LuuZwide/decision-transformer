@@ -268,7 +268,7 @@ def experiment(
                 rcsl_error_table.add_data(normalised_target, rcsl_error)
 
                 #RCSL std Table 
-                rcsl_std_table.add_data(normalised_target, normalised_std)
+                rcsl_std_table.add_data(eval_rtg, std_scores)
 
                 #RCSL Length Tables
                 rcsl_mean_length.add_data(normalised_target, mean_lengths)
