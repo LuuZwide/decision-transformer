@@ -295,6 +295,8 @@ def experiment(
             return torch.mean((a_hat - a)**2)
         elif loss_outputs == 'AS':
             return torch.mean((a_hat - a)**2) + torch.mean((s_hat - s)**2)
+        elif loss_outputs == 'AR': 
+            return torch.mean((a_hat - a)**2) + torch.mean((r_hat - r)**2)
         else :
             return torch.mean((a_hat - a)**2) + torch.mean((s_hat - s)**2) + torch.mean((r_hat - r)**2)
         

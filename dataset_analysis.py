@@ -33,7 +33,10 @@ env_name_str = f'{args.env}-{args.dataset}-v2'
 mean_norm_score  = get_normalized_score(env_name_str,np.mean(returns)) * 100
 max_norm_score  = get_normalized_score(env_name_str,np.max(returns)) * 100
 min_norm_score  = get_normalized_score(env_name_str,np.min(returns)) * 100
+std_norm_score  = get_normalized_score(env_name_str,np.std(returns)) * 100
+
 
 print(f'Normalized mean score: {mean_norm_score}')
 print(f'Normalized max score: {max_norm_score}')
 print(f'Normalized min score: {min_norm_score}')
+print(f'Normalized std score: {std_norm_score}')
